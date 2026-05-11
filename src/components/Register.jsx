@@ -22,7 +22,7 @@ function Register() {
     formState: { errors },
   } = useForm();
   const [apiError, setApiError] = useState(null);
-  const [preview, setPriview] = useState(null);
+  const [preview, setPreview] = useState(null);
   const navigate = useNavigate();
 
   //When user registration submitted
@@ -205,7 +205,7 @@ function Register() {
               onChange={(event) => {
                 let file = event.target.files[0];
                 if (file) {
-                  setPriview(URL.createObjectURL(file));
+                  setPreview(URL.createObjectURL(file));
                 }
               }}
             />
